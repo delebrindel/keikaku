@@ -19,12 +19,12 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+@include('partials.navbar')
 <div id="app">
-    <navbar-component></navbar-component>
         <main class="py-4">
             @yield('content')
         </main>
-        @include('partials.footer')
-</div>
+    </div>
+    @include('partials.footer')
 </body>
 </html>
